@@ -1,0 +1,121 @@
+/* Feuille de style destinée à la page d'accueil */
+/* Thomas Mirbey */
+
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: white;
+  line-height: 1.8;
+}
+
+body {
+    margin:0px;
+    padding:0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+li {
+   
+    font-size: 20px;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #252424;
+     opacity: 0.6;
+}
+
+li a:link {
+	color: white;
+}
+
+li a:visited {
+	color: white;
+}
+
+
+img {
+    max-width: 100%;
+    border-radius: 2px;
+    height: auto;
+	position:absolute;
+}
+
+
+
+.titre{margin:0px;
+	padding:0px;
+	vertical-align:middle;
+	font-size:12px;
+
+}
+
+header{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	height:100%;
+	/* l'image sahb est une image personnelle de la salle de selestat*/
+	background: url("sahb.jpg") no-repeat center center;
+	background-size:cover;
+	color:white;
+}
+
+.centre{
+	display:table;
+	width:100%;
+	height:100%;
+}
+
+.contenu{
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+}
+h1 {
+	font-size: 45px;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+
+}
+
+
+.soustexte {
+	color: white;
+	font-size: 25px;
+	font-family: Arial;
+	font-weight: bold;
+    text-align:center;
+}
+
+
+h2 {
+    text-align:center;
+}
+
+.illustration{
+  width:30%;
+  height:30%;
+  border-radius: 6px;
+}
+
+a:link{
+ text-decoration:none;
+ font-weight: bold;
+ color:#777;
+}

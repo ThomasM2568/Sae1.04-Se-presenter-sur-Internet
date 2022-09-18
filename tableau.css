@@ -1,0 +1,12 @@
+table, td, tr{
+	table-layout: fixed;
+	width: 100%;
+	
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+

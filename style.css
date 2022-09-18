@@ -1,0 +1,217 @@
+/* Feuille de style commune à toutes les pages hors de la page d'accueil */
+/* Thomas Mirbey */
+
+/* On définit la hauteur de body, h1, h2, h3, h4, h5, h6 à 100% pour qu'ils fassent la taille de tout le site
+On change la couleur du fond sur la couleur #777 (Blanc) et on définit que l'écart entre chaque ligne est de 1.8*/
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* On définit que tout ce qui est dans body est collé aux bords droites et gauches, et qu'on colle le haut et le bas de body sur le haut et le bas
+de la page*/
+
+body {
+    margin:0px;
+    padding:0px;
+}
+
+/* permet d'aligner ce qui sera mis dans cette division au centre de la page*/
+.text11 { text-align:center;}
+
+/*On définit le texte avec un écart automatique à droite et à gauchepar rapport au bord de la page de */
+.text1 {
+margin-left:auto;
+margin-right:auto;
+}
+
+/* On définit que tout ce qui sera dans text2 sera décalé de 15 pixels par rapport à ce qu'il y a à droite et à gauche et ce qu'il y a au dessus*/
+.text2 {
+    margin:0px;
+    padding:15px;
+}
+
+/* On définit que tout ce qui sera dans text3 sera décalé de 15 pixels par rapport à ce qu'il y a à droite et à gauche et ce qu'il y a au dessus
+on aligne le texte au centre*/
+.text3 {
+    margin:15px;
+    padding:15px;
+    text-align:justify;
+}
+
+/* On définit que tout ce qui sera dans text3 sera décalé de 15 pixels par rapport à ce qu'il y a à droite et à gauche et ce qu'il y a au dessus
+on aligne le texte au centre et on souligne le contenu*/
+.text4 {
+    font-weight: bold;
+    margin:15px;
+    padding:15px;
+    text-align:justify;
+}
+
+/* On retire les puces devant les noms des éléments d'une liste, on colle la liste à droite et à gauche et sur le dessus
+overflow: hidden; veut dire que tout ce qui sort du cadre n'est pas affiché
+la couleur du fond est définie sur #333
+*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/*Les éléments de la liste sont alignés à gauche*/
+li {
+    float: left;
+}
+
+/*spécifie l'organisation de la liste en block, avec le texte écrit en blanc et centré, un écart à gauche de 14px et à droite de 16px*/
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* change la couleur de chaque élément de la liste au passage de la souris*/
+li a:hover {
+    background-color: #111;
+}
+
+
+/*On définit la couleur des liens dans les balises li avec un texte blanc*/
+li a:link {
+	color: white;
+}
+
+/*Les liens déjà visités dans les listes resteront en blanc*/
+li a:visited {
+	color: white;
+}
+
+/* les images auront une taille maximale de 100%, avec un arrondi des bordures de 2px et une hauteur automatique*/
+img {
+    max-width: 100%;
+    border-radius: 2px;
+    height: auto;
+}
+
+/* ce qui est contenu dans cette division permet de centrer les textes, de les aligner verticalement au milieu et de définir la taille de la police sur 12px*/
+.titre{
+	text-align:center;
+	vertical-align:middle;
+	font-size:12px;
+
+}
+
+/* ce qui est contenu dans header aura une largeur à 100% et une hauteur à 30%, l'image définit comme précédemment sera l'image sahb.jpg
+qui ne se dupliquera pas pour combler le vide et sera centrée en axe x et y*/
+header{
+	width:100%;
+	height:30%;
+	/* l'image sahb est une image personnelle de la salle de selestat*/
+	background: url("sahb.jpg") no-repeat center center;
+	background-size:cover;
+	color:white;
+}
+
+.centre{
+  margin:0px;
+  padding:0px;
+	display:table;
+	width:100%;
+	height:100%;
+}
+
+/* ce qui sera dans cette division aura une marge de 0px et et une marge sur le dessus de 0px, affiché en table, avec une largeur et une auteur de 100%*/
+.contenu{
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+}
+
+/* h1 a une taille de police de 40px avec une couleur blanche, de police arial et en gras*/
+h1 {
+	font-size: 40px;
+	color: white;
+	font-family: Arial;
+	font-weight: bold;
+}
+
+/* ce qui est dans sous texte sera blanc avec une taille de police de 20px, une police arial en gras et alignée au centre*/
+.soustexte {
+	color: white;
+	font-size: 20px;
+	font-family: Arial;
+	font-weight: bold;
+    text-align:center;
+}
+
+/* le contenu sera aligné à gauche avec une marge de 0px*/
+h3 {
+    text-align:left;
+	margin:0px;
+}
+/* h2 et h4 sont alignés au centre*/
+h2 {
+    text-align:center;
+}
+
+h4 {
+    text-align:center;
+}
+
+/* la class illustration aura une taille et une hauteur de 10%*/
+.illustration{
+  width:10%;
+  height:10%;
+}
+
+/* la class illustration2 aura une taille et une hauteur de 60%*/
+.illustration2{
+  width:60%;
+  height:60%;
+}
+
+
+/* les liens n'auront plus le style par défaut, seront en gras et avec la couleur #777*/
+a:link
+{
+ text-decoration:none;
+ font-weight: bold;
+ color:#777;
+}
+
+/* la division gauche permet de centrer à gauche*/
+.gauche {
+    float:left;
+    margin: 0
+    }
+
+.droite {
+    float:right;
+    margin: 0
+    }
+
+/* la division milieu permet de centrer au milieu*/
+.milieu{
+  margin-left: auto;
+  margin-right:auto;
+}
+
+
+/* cette division permet de mettre un élément en blanc*/
+.white{color:#fff!important}
+/* cette division permet de mettre un élément en blanc avec un fond bleu*/
+.blue{color:#fff!important;background-color:#03a9f4!important}
+/* cette division permet de mettre un élément à une largeur de 100%, une auteur de 1.5
+une position relative (donc non fixe) et un fond #f1f1f1 */
+.prog{width:100%;height:1.5em;position:relative;background-color:#f1f1f1}
+/* cette division permet de mettre un élément à une largeur de 100%, une auteur de 1.5
+une position relative (donc non fixe) et un fond #f1f1f1 récupère la hauteur de la class parent prog */
+.pg{background-color:#757575;height:100%;position:absolute;line-height:inherit}
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Titre du document</title>
+  </head>
+  <body>
+    <div style="background:#1c87c9; padding: 20px; text-align:center; color:#ffffff;" contextmenu="menuexample">
+      <p>Cliquez avec le bouton droit de la souris dans cette zone pour ouvrir le menu contextuel.</p>
+      <menu type="context" id="menuexample">
+        <menuitem label="Refresh" onclick="window.location.reload();"></menuitem>
+        <menu label="Share on...">
+          <menuitem label="Twitter" onclick="window.open('//twitter.com/intent/tweet?text=' + window.location.href);"></menuitem>
+          <menuitem label="Facebook" onclick="window.open('//facebook.com/sharer/sharer.php?u=' + window.location.href);"></menuitem>
+        </menu>
+        <menuitem label="Email This Page" onclick="window.location='mailto:?body='+window.location.href;"></menuitem>
+      </menu>
+    </div>
+    <p><span style="color:red;">Rappel:</span> Cela ne fonctionne que dans Firefox.</p>
+  </body>
+</html>
